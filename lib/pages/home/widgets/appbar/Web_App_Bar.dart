@@ -28,6 +28,20 @@ class Web_App_Bar extends StatelessWidget {
               ),
               child: Text("Fazer Login"),
             ),
+          ),
+          const SizedBox(width: 8,),
+          SizedBox(
+            height: 38,
+            child: ElevatedButton(
+              onLongPress: (){},
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                  onPrimary: Colors.black,
+                  textStyle: TextStyle(fontWeight: FontWeight.bold),
+                  side: BorderSide(width: 2, color: Colors.white)
+              ),
+              child: Text("Cadastre-se"),
+            ),
           )
         ],
       ),
