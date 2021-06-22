@@ -13,7 +13,22 @@ class Web_App_Bar extends StatelessWidget {
         children: <Widget>[
           Text("Flutter"),
            const SizedBox(width: 32),
-          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart))
+          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart)),
+          const SizedBox(
+            width: 32,
+          ),
+          SizedBox(
+            height: 38,
+            child: ElevatedButton(
+              onLongPress: (){},
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black,
+                onPrimary: Colors.white,
+                side: BorderSide(width: 2, color: Colors.white)
+              ),
+              child: Text("Fazer Login"),
+            ),
+          )
         ],
       ),
     );
