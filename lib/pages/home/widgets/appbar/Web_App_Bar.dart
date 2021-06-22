@@ -9,6 +9,13 @@ class Web_App_Bar extends StatelessWidget {
     return AppBar(
       backgroundColor: Colors.black,
       toolbarHeight: 72,
+      title: Row(
+        children: <Widget>[
+          Text("Flutter"),
+           const SizedBox(width: 32),
+          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart))
+        ],
+      ),
     );
   }
 }
