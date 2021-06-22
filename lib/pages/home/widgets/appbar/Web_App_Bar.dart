@@ -13,6 +13,7 @@ class Web_App_Bar extends StatelessWidget {
         children: <Widget>[
           Text("Flutter"),
            const SizedBox(width: 32),
+          Expanded(child: Container()),
           IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart)),
           const SizedBox(
             width: 32,
