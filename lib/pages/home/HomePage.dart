@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsividade/pages/home/widgets/appbar/Mobile_app_bar.dart';
 import 'package:responsividade/pages/home/widgets/appbar/Web_App_Bar.dart';
+import 'package:responsividade/pages/home/widgets/sections/Top_Sections.dart';
 import '../../BreakPoints.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,9 +22,11 @@ class HomePage extends StatelessWidget {
                 maxWidth: 1400,
 
               ),
-              child: Container(
-                color: Colors.red,
-              ),
+              child: ListView(
+                children: <Widget>[
+                  Top_Section(),
+                ],
+              )
             ),
           ),
         );
