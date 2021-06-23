@@ -30,7 +30,7 @@ class Top_Section extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Text("Aprenda Flutter com este curso",style: TextStyle(
-                              fontSize: 40,
+                              fontSize: 35,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),),
@@ -38,7 +38,7 @@ class Top_Section extends StatelessWidget {
                             Text("Aprendendo Flutter com o profesor Daniel Ciolfi, "
                                 "cursos por apenas R\$ 22.90, qualidade garantida",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 15,
                               color: Colors.white,
                             ),),
                             Padding(padding: EdgeInsets.only(top: 10)),
