@@ -34,14 +34,14 @@ class Top_Section extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),),
-                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Padding(padding: EdgeInsets.only(top: 15)),
                             Text("Aprendendo Flutter com o profesor Daniel Ciolfi, "
                                 "cursos por apenas R\$ 22.90, qualidade garantida",
                             style: TextStyle(
                               fontSize: 15,
                               color: Colors.white,
                             ),),
-                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Padding(padding: EdgeInsets.only(top: 15)),
                             Custom_Search_Fill()
                           ],
                         ),
@@ -100,7 +100,13 @@ class Top_Section extends StatelessWidget {
           );
         }
 
-        return Container();
+        return Column(
+          children: <Widget>[
+            AspectRatio(aspectRatio: 3.2,
+            child: Image.asset("../../../imagens/logo.png",fit: BoxFit.cover,),
+            )
+          ],
+        );
 
     });
   }
