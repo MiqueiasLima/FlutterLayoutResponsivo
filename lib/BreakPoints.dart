@@ -1,0 +1,2 @@
+
+const breakPoints = 700;
