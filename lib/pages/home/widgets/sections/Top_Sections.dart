@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsividade/pages/home/widgets/Custom_Search_Fill.dart';
 
 class Top_Section extends StatelessWidget {
   const Top_Section({Key key}) : super(key: key);
@@ -11,7 +12,42 @@ class Top_Section extends StatelessWidget {
         if(resolucao >= 1200){
          return  AspectRatio(
             aspectRatio: 3.2,
-            child: Image.asset("../../../imagens/logo.png",fit: BoxFit.cover,),
+            child: Stack(
+              children: <Widget>[
+                AspectRatio(aspectRatio: 3.2,child:Image.asset("../../../imagens/logo.png",fit: BoxFit.cover,),
+                ),
+                Positioned(
+                    top: 50,
+                    left: 50,
+                    child: Card(
+                      color: Colors.black,
+                      elevation: 8,
+                      child: Container(
+                        padding: EdgeInsets.all(20),
+                        width: 400,
+                        child: Column(
+                          children: <Widget>[
+                            Text("Aprenda Flutter com este curso",style: TextStyle(
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Text("Aprendendo Flutter com o profesor Daniel Ciolfi, "
+                                "cursos por apenas R\$ 22.90, qualidade garantida",
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),),
+                            Padding(padding: EdgeInsets.only(top: 10)),
+                            Custom_Search_Fill()
+                          ],
+                        ),
+                      ),
+                    ))
+
+              ],
+            )
 
           );
         }
