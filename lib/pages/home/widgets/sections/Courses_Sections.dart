@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsividade/BreakPoints.dart';
+import 'package:responsividade/pages/home/widgets/sections/Course_Item.dart';
 
 class Courses_Sections extends StatelessWidget {
   const Courses_Sections({Key key}) : super(key: key);
@@ -15,8 +16,7 @@ class Courses_Sections extends StatelessWidget {
         shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
-          return Container(
-            color: Colors.blue,
+          return Course_Item(
           );
         },
       );
