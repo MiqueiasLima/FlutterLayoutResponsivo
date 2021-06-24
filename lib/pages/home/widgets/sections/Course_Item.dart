@@ -12,12 +12,13 @@ class Course_Item extends StatelessWidget {
         Image.asset("../../../imagens/logo.png",
         fit: BoxFit.fitWidth,),
         const SizedBox(height: 4,),
-        Text("Criação de Apps Android IOS com Flutter - crie 16 apps",
+        
+        Flexible(child: Text("Criação de Apps Android IOS com Flutter - crie 16 apps",
           style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,
               fontSize: 15),
-        ),
+        ) ),
         Text("Daniel Ciolfi",style: TextStyle(color: Colors.grey),),
-        Text("R\$ 22.90"),
+        Text("R\$ 22.90",style: TextStyle(color: Colors.white),),
       ],
     );
   }
