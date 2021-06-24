@@ -112,7 +112,9 @@ class Top_Section extends StatelessWidget {
         );
       }
 
-      return Column(children: <Widget>[
+      return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
         AspectRatio(
           aspectRatio: 3.2,
           child: Image.asset(

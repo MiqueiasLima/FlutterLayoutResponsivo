@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Advantages_Sections extends StatelessWidget {
@@ -6,11 +7,15 @@ class Advantages_Sections extends StatelessWidget {
   @override
   Widget buildWidget(String title, String subtitle) {
     return Row(
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Icon(
           Icons.star,
           color: Colors.white,
           size: 50,
+        ),
+        SizedBox(
+          width: 8,
         ),
         Column(
           children: <Widget>[
@@ -32,12 +37,19 @@ class Advantages_Sections extends StatelessWidget {
   }
 
   Widget build(BuildContext context) {
-    return Wrap(
-      children: <Widget>[
-        buildWidget("titulo 1", "subtitulo1"),
-        buildWidget("titulo 2", "subtitulo2"),
-        buildWidget("titulo 3", "subtitulo3"),
-      ],
+    return Container(
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+      decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.white))),
+      child: Wrap(
+        runSpacing: 12,
+        spacing: 8,
+        alignment: WrapAlignment.spaceEvenly,
+        children: <Widget>[
+          buildWidget("+45000 alunos", "Didática garantida"),
+          buildWidget("+45000 alunos", "Didática garantida"),
+          buildWidget("+45000 alunos", "Didática garantida"),
+        ],
+      ),
     );
   }
 }
